@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - App.tsx
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 import React, { useState } from 'react';
 import { SpendingEntry, CooldownPeriod } from './types';
 import { HabitTracker } from './components/HabitTracker';

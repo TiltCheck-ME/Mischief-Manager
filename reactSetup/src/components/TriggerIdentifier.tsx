@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - Trigger Identifier Component
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 import React from 'react';
 import { AlertTriangle, Clock, MapPin, Heart, Brain } from 'lucide-react';
 import { SpendingEntry } from '../types';

@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - Type Definitions
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 // Types for Mischief Manager - Habit Tracking for Impulse Spending
 
 export interface SpendingEntry {

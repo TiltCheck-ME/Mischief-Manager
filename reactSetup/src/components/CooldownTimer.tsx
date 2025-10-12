@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - Cooldown Timer Component
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 import React, { useState, useEffect } from 'react';
 import { Clock, CheckCircle, X } from 'lucide-react';
 import { CooldownPeriod } from '../types';

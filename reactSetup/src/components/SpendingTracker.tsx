@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - Spending Tracker Component
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 import React, { useState } from 'react';
 import { DollarSign, AlertTriangle, Clock, Plus, CheckCircle } from 'lucide-react';
 import { SpendingEntry, EmotionalState, Trigger, TriggerType, MoodLevel, CooldownPeriod } from '../types';

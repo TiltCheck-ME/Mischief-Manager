@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - Habit Tracking Utilities
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 import { SpendingEntry, Trigger, HabitPattern, UserInsight, InsightType, MoodLevel } from '../types';
 
 // Generate unique ID for entries

@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - Global Styles
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

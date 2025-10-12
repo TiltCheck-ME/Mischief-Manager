@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - Insights Dashboard Component
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 import React from 'react';
 import { Lightbulb, TrendingDown, Clock, Heart, Target, CheckCircle, AlertCircle } from 'lucide-react';
 import { UserInsight, SpendingEntry, InsightType } from '../types';

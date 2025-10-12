@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - Habit Tracker Component
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 import React, { useState } from 'react';
 import { TrendingUp, Brain, Clock, AlertCircle } from 'lucide-react';
 import { SpendingEntry, CooldownPeriod } from '../types';

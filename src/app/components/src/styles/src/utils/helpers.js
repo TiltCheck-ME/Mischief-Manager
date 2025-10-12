@@ -1,3 +1,9 @@
+/*
+ * Mischief Manager - Helper Functions
+ * Copyright (c) 2025 Jamie Vargas
+ * Licensed under the MIT License - see LICENSE file for details
+ */
+
 // Helper functions for Mischief Manager
 
 // Format currency without $ symbol (using USD instead)

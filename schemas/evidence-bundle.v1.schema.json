@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mischiefmanager.local/schemas/evidence-bundle.v1.schema.json",
+  "title": "EvidenceBundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["bundleVersion", "createdAt", "taxonomyVersion", "policyVersion", "events"],
+  "properties": {
+    "bundleVersion": { "type": "string", "pattern": "^1\\." },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "taxonomyVersion": { "type": "string" },
+    "policyVersion": { "type": "string" },
+    "events": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/impressionEvent" }
+    }
+  },
+  "$defs": {
+    "tier": { "type": "string", "enum": ["block", "blur", "allow", "allow_log"] },
+    "suslinkSnap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["riskLevel", "reason", "scannedAt"],
+      "properties": {
+        "riskLevel": {
+          "type": "string",
+          "enum": ["safe", "suspicious", "high", "critical"]
+        },
+        "reason": { "type": "string" },
+        "scannedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "impressionEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "eventId",
+        "decidedAt",
+        "tier",
+        "matchedCategories",
+        "policyRuleIds",
+        "surface",
+        "landingUrlHash"
+      ],
+      "properties": {
+        "eventId": { "type": "string", "format": "uuid" },
+        "decidedAt": { "type": "string", "format": "date-time" },
+        "tier": { "$ref": "#/$defs/tier" },
+        "matchedCategories": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^CAT-[0-9]{2}$" }
+        },
+        "policyRuleIds": { "type": "array", "items": { "type": "string" } },
+        "surface": { "type": "string" },
+        "landingUrlHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "creativeHash": { "type": "string" },
+        "suslink": { "$ref": "#/$defs/suslinkSnap" },
+        "userDeclaredSensitivities": { "type": "array", "items": { "type": "string" } },
+        "userReport": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "freeText": { "type": "string" },
+            "contactRef": { "type": "string" },
+            "jurisdiction": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

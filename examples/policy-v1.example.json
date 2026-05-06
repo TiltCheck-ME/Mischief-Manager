@@ -1,0 +1,32 @@
+{
+  "policyVersion": "2026.05.06.1",
+  "taxonomyVersion": "1.0",
+  "effectiveFrom": "2026-05-06T00:00:00.000Z",
+  "rules": [
+    {
+      "id": "RULE-GAM-URGENCY-001",
+      "categoryId": "CAT-02",
+      "defaultTier": "blur",
+      "description": "Gambling ads with urgency keywords in creative or landing path",
+      "match": {
+        "keywords": ["bonus-expires", "limited-time-offer", "claim-now"]
+      }
+    },
+    {
+      "id": "RULE-PAYDAY-HIGH-001",
+      "categoryId": "CAT-01",
+      "defaultTier": "blur",
+      "description": "Example payday lender domain suffixes (illustrative only)",
+      "match": {
+        "domainSuffixes": ["example-payday.test"]
+      }
+    },
+    {
+      "id": "RULE-SUSLINK-ELEVATE",
+      "categoryId": "CAT-07",
+      "defaultTier": "blur",
+      "description": "Placeholder rule; actual tier bump from SusLink applied in engine merge logic",
+      "match": {}
+    }
+  ]
+}

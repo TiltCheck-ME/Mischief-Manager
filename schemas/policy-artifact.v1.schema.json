@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mischiefmanager.local/schemas/policy-artifact.v1.schema.json",
+  "title": "PolicyArtifact",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["policyVersion", "taxonomyVersion", "rules"],
+  "properties": {
+    "policyVersion": { "type": "string" },
+    "taxonomyVersion": { "type": "string" },
+    "effectiveFrom": { "type": "string", "format": "date-time" },
+    "rules": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/rule" }
+    }
+  },
+  "$defs": {
+    "tier": { "type": "string", "enum": ["block", "blur", "allow", "allow_log"] },
+    "rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "categoryId", "defaultTier", "match"],
+      "properties": {
+        "id": { "type": "string" },
+        "categoryId": { "type": "string", "pattern": "^CAT-[0-9]{2}$" },
+        "defaultTier": { "$ref": "#/$defs/tier" },
+        "description": { "type": "string" },
+        "match": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "domainSuffixes": { "type": "array", "items": { "type": "string" } },
+            "keywords": { "type": "array", "items": { "type": "string" } },
+            "advertiserIds": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}

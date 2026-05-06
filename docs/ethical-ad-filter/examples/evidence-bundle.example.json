@@ -1,0 +1,28 @@
+{
+  "bundleVersion": "1.0.0",
+  "createdAt": "2026-05-06T12:00:00.000Z",
+  "taxonomyVersion": "1.0",
+  "policyVersion": "2026.05.06.1",
+  "events": [
+    {
+      "eventId": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "decidedAt": "2026-05-06T11:59:30.000Z",
+      "tier": "blur",
+      "matchedCategories": ["CAT-02", "CAT-07"],
+      "policyRuleIds": ["RULE-GAM-URGENCY-001", "RULE-SUSLINK-ELEVATE"],
+      "surface": "webview",
+      "landingUrlHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "creativeHash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+      "suslink": {
+        "riskLevel": "high",
+        "reason": "Possible typosquat of stake.com (edit distance: 1)",
+        "scannedAt": "2026-05-06T11:59:28.000Z"
+      },
+      "userDeclaredSensitivities": ["gambling"],
+      "userReport": {
+        "freeText": "Countdown bonus pressure after self-exclusion period",
+        "jurisdiction": "US-CA"
+      }
+    }
+  ]
+}

@@ -1,27 +1,75 @@
-Mischief Manager
+# Mischief Manager
 
-Mischief Manager is a habit tracking app designed to help individuals with ADHD, bipolar disorder, and other mental health conditions understand and manage impulse spending through awareness and pattern recognition. The goal is to help users learn their triggers and avoid the actions that lead up to unwanted spending habits.
+**Mischief Manager** is a habit-tracking and awareness app for people who want to understand **impulse spending**—especially alongside ADHD, bipolar disorder, or similar patterns. It focuses on **triggers, cooldowns, and reflection**, not shame or hard blocks.
 
-## Core Features ✅
+**Repository:** [github.com/TiltCheck-ME/Mischief-Manager](https://github.com/TiltCheck-ME/Mischief-Manager)
 
-### Habit Tracking & Pattern Recognition
-- **Impulse Spending Tracker**: Log purchases with detailed emotional context
-- **Trigger Identification**: Track what leads to impulse purchases (emotions, situations, times)
-- **Pattern Analysis**: Automatically identify spending patterns and risk factors
-- **Emotional State Tracking**: Monitor mood, stress, and energy levels during purchases
+---
 
-### Real-Time Support
-- **Cool-down Periods**: 5, 10, or 15-minute pause buttons when feeling triggered
-- **Quick Action Buttons**: Fast access to common scenarios (feeling triggered, strong urge, etc.)
-- **Mindful Interventions**: Guided breathing and reflection prompts during cooldowns
+## In this repo
 
-### Insights & Learning
-- **Personalized Analytics**: Dashboard showing spending trends and trigger patterns
-- **Time-based Insights**: Identify high-risk times of day for impulse purchases
-- **Success Tracking**: Log and celebrate when you resist impulses
-- **Prevention Strategies**: Actionable recommendations based on your patterns
+| Area | What it is |
+| --- | --- |
+| [`reactSetup/`](reactSetup/) | React + TypeScript + Vite + Tailwind UI (primary app prototype) |
+| [`docs/ethical-ad-filter/`](docs/ethical-ad-filter/) | **Ethical ad filter** specs: taxonomy, ADR, evidence bundles, SusLink integration notes |
+| [`schemas/`](schemas/) | JSON Schemas for policy artifacts and evidence bundles |
+| [`examples/`](examples/) | Example policy JSON |
+| [`planning/roadmap.md`](planning/roadmap.md) | High-level roadmap |
+| [`docs/setup.md`](docs/setup.md) | Setup notes (to be expanded) |
 
-## Getting Started
+Policy and accountability design index: [`docs/ethical-ad-filter/README.md`](docs/ethical-ad-filter/README.md).
+
+---
+
+## Core features (app)
+
+### Habit tracking and pattern recognition
+
+- **Impulse spending tracker** — log purchases with emotional context  
+- **Trigger identification** — what led to the purchase (emotions, situations, time)  
+- **Pattern analysis** — surface spending patterns and risk factors  
+- **Emotional state tracking** — mood, stress, energy around purchases  
+
+### Real-time support
+
+- **Cooldown periods** — 5 / 10 / 15 minute pause when triggered  
+- **Quick actions** — fast paths for common scenarios  
+- **Mindful interventions** — breathing and reflection during cooldowns  
+
+### Insights
+
+- **Personalized analytics** — trends and trigger patterns  
+- **Time-based insights** — higher-risk times of day  
+- **Success tracking** — log resisting impulses  
+- **Prevention strategies** — suggestions from your patterns  
+
+---
+
+## Degen edition (positioning)
+
+*Outsmart the urge. Protect the stack. Learn your patterns.*
+
+A **behavioral awareness** angle for people who gamble: same philosophy as Mischief Manager (awareness, optional guardrails, user control)—applied to **avoiding rinse cycles** and tilt without telling people they “can’t play.”
+
+**Highlights**
+
+- Max bet awareness and soft, reflective warnings  
+- Optional auto-vault of a % of winnings (visible, user-controlled)  
+- Session tagging, tilt and “rinse” history, game-type trends  
+- Budget guardrails as **charts and reflection**, not locks  
+- Post-rinse optional prompts and trends—**opt-in**  
+
+This is not about restriction; it’s about **how** you play and building self-trust.
+
+---
+
+## Ethical ad filter (product architecture)
+
+Cross-cutting work on **user-controlled ad sensitivity**, **policy JSON**, **evidence exports**, and optional **SusLink** URL signals lives under `docs/ethical-ad-filter/` and `schemas/`. It complements the app’s mission (reducing harm from predatory or high-pressure ads) without inferring clinical diagnoses.
+
+---
+
+## Getting started (local dev)
 
 ```bash
 cd reactSetup
@@ -29,49 +77,17 @@ npm install
 npm run dev
 ```
 
-## Technology Stack
+See [`docs/setup.md`](docs/setup.md) for environment notes.
 
-- **Frontend**: React + TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Build Tool**: Vite
+## Tech stack
 
-Currently in active development. The app uses local state management - data persists during your session but isn't saved permanently yet.
+- **Frontend:** React, TypeScript  
+- **Styling:** Tailwind CSS  
+- **Icons:** Lucide React  
+- **Build:** Vite  
 
+**Note:** The prototype mainly uses **local state**; persistence is still evolving.
 
+## License
 
-Degen Edition
-Outsmart the Urge. Protect the Stack. Learn Your Patterns.
-
-A behavioral awareness and financial empowerment tool designed for gamblers who want to avoid the "rinse" cycle (i.e., hitting $0 balance) while still enjoying the game. Originally built as Mischief Manager to help users control impulse spending (think: ADHD-friendly budget boundaries, impulse tracking), this edition applies the same philosophy to gambling without restricting the player from playing.
-
-Features
-
-   Max Bet Awareness
-Set personal max bet reference points per game or globally
-Soft warnings when you're going above typical thresholds
-Option to reflect, not restrict — keep the user fully in control
-    Auto-Vault Winnings
-Optionally earmark a % of profits after a win as "vaulted savings"
-Vaulted balance remains visible and user-controlled — never locked
-Encourages awareness of profit-taking without restricting play
-    Behavioral Pattern Learning
-Tr acks emotional tags, tilt timeframes, bet sizes, and rinse history
-Learns what times, games, and triggers result in negative outcomes
-Offers post-session summaries and insights for future decisions
-    Game-Specific Trend Insights
-View personal data for different game types (slots, blackjack, sports, etc.)
-Tag sessions manually ("fun," "bored," "chasing") to reflect later
-Gentle nudges if patterns suggest risky behavior — always opt-in
-    Budget Guardrails
-Visual dashboards for daily/weekly budget goals
-No enforcement — instead promotes reflection through trend charts and pattern highlights
-Supports planning and self-accountability
-    Rinse Recovery Insights
-When balance hits $0, system offers optional prompts to reflect
-Trends around previous rinse events are tracked for personal awareness
-Suggests user-defined goals or reminders, never locks access
-
-
-This isn’t about telling people they can't play. It’s about helping them understand how they play — building awareness, strengthening self-trust, and turning impulsive habits into intentional ones.
-
+See [`LICENSE`](LICENSE).

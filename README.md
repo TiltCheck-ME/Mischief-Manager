@@ -90,4 +90,4 @@ See [`docs/setup.md`](docs/setup.md) for environment notes.
 
 ## License
 
-See [`LICENSE`](LICENSE).
+[PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/) — you may use and modify this project for **noncommercial** purposes; **selling** the software, offering it for a fee, or using it primarily to make money requires a separate license from the copyright holder. Full terms: [`LICENSE`](LICENSE).

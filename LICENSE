@@ -1,21 +1,81 @@
-MIT License
+Copyright (c) 2025-2026 Jamie Vargas
 
-Copyright (c) 2025 Jamie Vargas 
+Licensed under the PolyForm Noncommercial License 1.0.0.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+# PolyForm Noncommercial License 1.0.0
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+<https://polyformproject.org/licenses/noncommercial/1.0.0>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## Acceptance
+
+In order to get any license under these terms, you must agree
+to them as both strict obligations and conditions to all your
+licenses.
+
+## Copyright License
+
+The licensor grants you a copyright license for the software to do
+everything you might do with the software that would otherwise infringe
+the licensor's copyright in it for any permitted purpose.  However, you may
+only distribute the software according to [Distribution License](#distribution-license)
+and make changes or new works based on the software according to [Changes and New Works License](#changes-and-new-works-license).
+
+## Distribution License
+
+The licensor grants you an additional license to distribute copies of the software. Your license to distribute covers distributing the software with changes and new works permitted by [Changes and New Works License](#changes-and-new-works-license). You must comply with the terms of the license in everything you do with the software that would otherwise infringe the licensor's copyright in it.
+
+## Changes and New Works License
+
+The licensor grants you an additional license to use, copy, distribute, make changes, and make new works based on the software for any permitted purpose.
+
+## Patent License
+
+The licensor grants you a patent license for the software that covers patent claims the licensor can license, or becomes able to license, that you would infringe by using the software.
+
+## Noncommercial Purposes
+
+Any noncommercial purpose is a permitted purpose.
+
+## Personal Uses
+
+Personal use for research, experiment, and testing for the benefit of public knowledge, personal study, private entertainment, hobby projects, amateur pursuits, or religious observance, without any anticipated commercial application, is use for a permitted purpose.
+
+## Noncommercial Organizations
+
+Use by charitable organizations, educational institutions, and public interest groups who are organized in a manner that does not primarily benefit the members or owners of the organization is use for a permitted purpose.
+
+## Fair Use
+
+You may "fair use" the software as permitted under applicable law, and that this license does not limit your fair use rights.
+
+## Notices
+
+You must ensure that anyone who gets a copy of any part of the software from you also gets a copy of these terms or the URL for them above.
+
+## Excuse
+
+You're excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.
+
+## Patent Defense
+
+If you make written claim that Patents cover the software or that the software infringes Patents, the license granted to you ends immediately.
+
+## Continuation
+
+Your licenses under these terms continue through any termination, and they continue for as long as your exercise of the licensed rights is permitted under these terms.
+
+## Severability
+
+If any provision of these terms is unenforceable, it will be enforced to the extent possible, and the remainder of the terms will remain in effect.
+
+## Regulatory
+
+If the software is computer software, and you get it from the United States of America government, then it is not "commercial computer software" under Federal Acquisition Regulation 12.212 or Defense Federal Acquisition Regulation Supplement 227.7202-4, and any use is subject to all restrictions that apply to any other public domain software.
+
+## Disclaimer
+
+There is no warranty provided for the software. **As is** means no warranties of any kind, express or implied. **As available** means the software may not be available to you and may not be available in your language. **No liability** means no party will be liable to you for any damages arising out of these terms or the software, except as required by applicable law in cases involving intentional wrongdoing or personal injury.
+
+## Disclosure
+
+If the software includes a "NOTICE" text file, you must read and comply with any licensing terms identified in that file.
